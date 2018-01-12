@@ -32,6 +32,9 @@ ul {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
+.menu {
+  display: none;
+}
 .header {
   display: flex;
   flex-direction: row;
@@ -87,6 +90,7 @@ ul {
   background-color: firebrick;
   width: 100%;
 }
+
 .products {
   display: flex;
   flex-direction: row;
@@ -161,4 +165,63 @@ footer {
 }
 footer p {
   text-align: left;
+}
+
+@media only screen and (max-width: 1024px) {
+  .box {
+    width: 47%;
+    height: auto;
+  }
+  #glasses {
+    display: none;
+  }
+  li {
+    display: none;
+  }
+  ul {
+    justify-content: center;
+  }
+  .menu {
+    display: flex;
+
+  }
+}
+@media only screen and (max-width: 470px) {
+  .banner {
+    align-items: flex-end;
+  }
+  .bannerbox {
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+  .bannerbox p {
+    font-size: 0.77rem;
+  }
+  .bannerbox h1 {
+    font-size: 1rem;
+  }
+  .products {
+    width: 100%;
+    justify-content: center;
+  }
+  .box {
+    width: 90%;
+    height: auto;
+  }
+  #watch {
+    display: none;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+  .infosub {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  footer p {
+    text-align: center;
+  }
 }
